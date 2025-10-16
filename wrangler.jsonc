@@ -1,16 +1,20 @@
-{
-	"compatibility_date": "2025-10-08",
-	"main": "src/index.ts",
-	"name": "rs3-ai-bot-api",
-	"upload_source_maps": true,
-	"observability": {
-		"enabled": true
-	},
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_name": "rs3-ai-bot-api-db",
-			"database_id": "9e59dfb4-bfba-4edd-9b8e-53095170f7e2"
-		}
-	]
-}
+name = "rs3-ai-bot-api"
+main = "src/index.ts"
+compatibility_date = "2025-10-08"
+upload_source_maps = true
+
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "BOT_DB"
+database_name = "rs3-ai-bot-api-db"
+database_id = "9e59dfb4-bfba-4edd-9b8e-53095170f7e2"
+
+[[kv_namespaces]]
+binding = "RS3_BOT_MEMORY_KV"
+id = "8c5a2eb8be934b078487ae615c0de92e"
+
+[vars]
+JSONBIN_BIN_ID = "your-jsonbin-bin-id-here"  # Replace with actual ID from jsonbin.io dashboard, text no encrypt
+# GITHUB_TOKEN and JSONBIN_MASTER_KEY are secrets, add in dashboard Settings > Variables and Secrets encrypted, not here
