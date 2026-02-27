@@ -27,13 +27,13 @@
 	},
 	"dependencies": {
 		"chanfana": "2.8.1",
-		"hono": "4.8.2",
+		"hono": "4.11.10",
 		"zod": "3.25.67"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "0.8.44",
+		"@cloudflare/vitest-pool-workers": "0.8.71",
 		"@types/node": "24.0.4",
 		"typescript": "5.8.3",
-		"wrangler": "4.21.x"
+		"wrangler": "4.59.x"
 	}
 }
